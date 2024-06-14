@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
+
 public class GrupoI_Inmueble {
 	Scanner inputInm = new Scanner(System.in);
 	GrupoI_Inmueble objetsArray[];
@@ -32,6 +33,7 @@ public class GrupoI_Inmueble {
 		this.propertyLand = propertyLand;
 		this.PayEstimatedTim =PayEstimatedTim;
 	}
+
 	
 	public String toString() { //Retorna todos los valores ingresados o seleccionados.
 		return "direccion(CIUDAD) "+address+"\n"+
@@ -54,6 +56,7 @@ public class GrupoI_Inmueble {
 		double descuento = 0.12; // Descuento por pago al contado
         return price - (price * descuento);
 	}
+
 	
 	 // Método para inicializar datos de inmuebles estáticos.
 	public void ObjetStaticInmuebles() {
@@ -91,7 +94,10 @@ public class GrupoI_Inmueble {
 		System.out.println("BIENVENID@ A LA GESTION DE COMPRAS DE INMUELBES");
 		System.out.println("EN ESTE APARTADO SE MOSTRARÁN UNA SERIE DE INMUEBLES. \n"+
 		"SEGUN EL QUE MAS SE ACERQUE A SU PREFERENCIA, INDIQUE EN EL INGRESO DE VALORES TAL CUAL LOS DATOS MOSTRADOS");
+		
 		ObjetStaticInmuebles();
+
+		
 		System.out.println("________________________________________________");
 		System.out.println("");
 		System.out.println("A continuacion, ingresara la preferencia del inmueble de su agrado. ");
@@ -185,14 +191,17 @@ public class GrupoI_Inmueble {
 			case 1: {
 				propertyLand = "urbanizable";
 				break;
+				
 			}
 			case 2: {
 				propertyLand = "rustico";
 				break;
+				
 			}
 			default: {
 				System.out.print("Opcion no existente, vuelva a intentar: ");
 				break;
+				
 			}
 			}
 		}while(propertyLand == null);
