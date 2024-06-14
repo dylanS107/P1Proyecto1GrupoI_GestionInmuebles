@@ -26,6 +26,7 @@ public class GrupoI_Apartamento extends GrupoI_Inmueble{
 				"Tipo de ventana: "+tipeWindow+"\n"+
 				"Numero de balcones: "+numBalconies+"\n";
 	}
+
 	
 	@Override
 	 public void ObjetStaticInmuebles() {
@@ -48,6 +49,7 @@ public class GrupoI_Apartamento extends GrupoI_Inmueble{
             System.out.println("");
         }
     }
+
 	
 	public void IngresarDatosAdi() {
 		int optionWind;
@@ -81,6 +83,7 @@ public class GrupoI_Apartamento extends GrupoI_Inmueble{
 		    }
 		} while (optionWind < 1 || optionWind > 2);
 	}
+
 	
 	@Override
 	public void CompararMostrarData() {
@@ -98,7 +101,8 @@ public class GrupoI_Apartamento extends GrupoI_Inmueble{
 	                break; // Detener la búsqueda después de encontrar un resultado
 	            }
 	        }
-	        
+
+		
 	        if (!encontrado) {
 	            System.out.println("No se encontraron inmuebles con las características especificadas.");
 	        }
